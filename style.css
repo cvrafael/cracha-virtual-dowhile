@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif; /* se nao encontrar Roboto busca por sans-serif */
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(images/background.svg); /*  background relacao com fundo */
+  width: 375px; /* width = largura */
+  height: 812px; /* heith = altura */
+}
+
+.container {
+  max-width: 250px; /* max-width = largura maxima */
+  margin-left: auto; /* margin-left = margem esquerda */
+  margin-right: auto; /* margin-rigth = margem direita */
+  text-align: center; /* alinhamento ao centro  */
+
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem; /* width = largura */
+  margin: 11.5rem auto 0; /* Regula posicao da img referente o fundo */
+
+  position: relative;
+}
+
+.avatar span {
+  position: absolute; /* Absoluto na pagina inteira*/
+  margin-left: 85px;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex; /* Torna os elemento um ao lado do outro */
+  gap: 0.75rem; /* Espaçamento entre eles */
+
+  justify-content: center; /* alinha elementos para o centro */
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
