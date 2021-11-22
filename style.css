@@ -18,9 +18,10 @@ body {
 }
 
 main {
-  background: url(images/background.svg); /*  background relacao com fundo */
-  width: 375px; /* width = largura */
-  height: 812px; /* heith = altura */
+  background: url(images/background.svg) no-repeat center/cover; /*  background relacao com fundo */
+  width: 100vw; /* width = largura */
+  min-height: 812px;
+  height: 100vh; /* heith = altura */
 }
 
 .container {

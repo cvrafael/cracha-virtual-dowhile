@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>Caio Rafael - DoWhile 2021</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,15 +19,15 @@
           <span>
             <img src="images/build.svg" alt="Selo Rocketseat" />
           </span>
-          <img src="images/minhaimage.jpg" alt="Foto pessoal" />
+          <img src="images/minhaimage.jpg" alt="Foto pessoal" id="userImg"/>
         </div>
         <h1 id="userName">Caio Rafael</h1><!---->
-        <a href="https://github.com/cvrafael" target="_blank">
+        <a id="userLink" href="https://github.com/cvrafael" target="_blank">
           <img src="images/github.svg" alt="ícone github" />
-          cvrafael</a
+          <span id="userLogin">crafael</span></a
         >
 
-        <p>An instructor focused on gelping pople start programming for web.</p>
+        <p id="userBio">An instructor focused on gelping pople start programming for web.</p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -52,27 +53,6 @@
         </ul>
       </div>
     </main>
-
-    <script>
-      const LinksSocialMedia = {
-        github: 'cvrafael',
-        youtube: 'caiorafael',
-        facebook: 'caiorafael',
-        instagram: 'caaiioviictor',
-        twitter: 'cvrafael'
-      };
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class');    
-          
-          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
-
-          alert(li.children[0].href)
-        }
-      }
-
-      changeSocialMediaLinks();
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
